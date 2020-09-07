@@ -1,5 +1,10 @@
-<script>
-	export let name;
+<script lang="ts">
+	import { TestClass } from "./Test";
+
+
+	export let name: string;
+
+	console.info("Import typescript class from Svelte Component: %o", new TestClass());
 </script>
 
 <main>
